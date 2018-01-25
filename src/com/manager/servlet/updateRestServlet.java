@@ -1,0 +1,42 @@
+package com.manager.servlet;
+
+import java.io.IOException;
+import java.sql.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.manager.beans.Rest;
+import com.manager.service.RestService;
+
+@WebServlet("/updateRestServlet")
+public class updateRestServlet extends HttpServlet {
+	
+	RestService rs = new RestService();
+	private static final long serialVersionUID = 1L;
+	
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String strdate = request.getParameter("date");
+		Date date = Date.valueOf(strdate);
+		int days = Integer.parseInt(request.getParameter("days"));
+		int rid = Integer.parseInt(request.getParameter("rid"));
+		int sid =(int)request.getSession().getAttribute("sid");
+		Rest Rest = new Rest(rid,date,days,sid);
+		int i =rs.updateRest(Rest);
+		if(i==1){
+			response.getWriter().print("<script>window.history.back(-1);</script>");
+		}
+		
+		
+		
+	}
+
+}

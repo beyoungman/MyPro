@@ -1,0 +1,20 @@
+	input{
+		width:50%;
+		background-color: #dff0d8;
+	}
+	.remarks , .date {
+		width:100%;
+	}
+	.subdel{
+		width: 12%;
+	}
+	font{
+		font-weight: bold;
+		font-size:17px;
+	}
+	.delete{
+		margin-left:5px;
+		color: rgba(210,0,0,0.8);
+		font-weight: bold;
+		font-size:16px;
+	}
