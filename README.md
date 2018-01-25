@@ -24,4 +24,4 @@ tools包：工具包，包含分页类，jdbc连接，数据库连接信息在这里配置。
 		
 	    Servlet:  servlet-api.jar
 
-sql文件：需要去掉单引号才可以导入；
+sql文件：需要去掉单引号才可以导入；# MyPro
