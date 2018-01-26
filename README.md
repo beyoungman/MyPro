@@ -24,7 +24,7 @@ tools包：工具包，包含分页类，jdbc连接，数据库连接信息在�
 		
 	    Servlet:  servlet-api.jar
 
-sql文件：sql文件的引入；# MyPro
+sql文件：sql文件的引入，需要先建立数据库 bitou-manager，才可以引入；# MyPro
 
 
 //第一次上传GitHub.^_^
