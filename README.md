@@ -1,6 +1,6 @@
 这是我根据自家情况做的一个练习项目，用javabean+serlvet+jsp 的mvc模式开发的，开发工具eclipse，tomcat7，mysql 5.7。
 
-主要是管理员工，管理打包场进货和出货。页面不会写，写的很烂。
+主要是管理员工，管理打包场进货和出货。页面用bootstrap，写的很烂。
 
 javabeans包：	主要类；
 		user-用户，即老板，管理者；
